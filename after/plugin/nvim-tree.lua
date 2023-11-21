@@ -12,8 +12,7 @@ require("nvim-tree").setup()
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
-    width = 30,
-  },
+    width = 30,  },
   renderer = {
     group_empty = true,
   },
@@ -21,3 +20,6 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+
+

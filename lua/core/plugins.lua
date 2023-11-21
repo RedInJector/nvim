@@ -13,7 +13,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  
 
 use {
   'nvim-telescope/telescope.nvim', tag = '0.1.2',
@@ -22,8 +21,8 @@ use {
 }
 
 
-use({ 
-	'rose-pine/neovim', 
+use({
+	'rose-pine/neovim',
 	as = 'rose-pine',
 	config = function()
 		vim.cmd('colorscheme rose-pine')
@@ -55,11 +54,17 @@ use {
 }
 
 use {
-  'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional
-  },
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+        'nvim-tree/nvim-web-devicons', -- optional
+    },
 }
+
+use 'nvim-lua/plenary.nvim'
+
+
+use 'theprimeagen/harpoon'
+
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
