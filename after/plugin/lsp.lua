@@ -3,7 +3,6 @@ require'lspconfig'.jdtls.setup{}
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'tsserver',
   'rust_analyzer',
 })
 
