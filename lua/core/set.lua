@@ -61,4 +61,3 @@ vim.opt.updatetime = 50
 
 vim.opt.relativenumber = true
 
---vim.cmd([[command! -nargs=1 Runjava !java -jar %:p/app/build/libs/<args>]])

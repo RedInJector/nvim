@@ -20,7 +20,6 @@ use {
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
-
 use({
 	'rose-pine/neovim',
 	as = 'rose-pine',
@@ -61,7 +60,7 @@ use {
 }
 
 use 'nvim-lua/plenary.nvim'
-
+use 'windwp/nvim-ts-autotag'
 
 use 'theprimeagen/harpoon'
 
