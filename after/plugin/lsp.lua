@@ -58,3 +58,8 @@ vim.diagnostic.config({
     virtual_text = true
 })
 
+
+-- Set filetype for OpenCL files
+vim.cmd [[
+  autocmd BufRead,BufNewFile *.cl set filetype=opencl
+]]
